@@ -57,21 +57,27 @@
       <a href="#">
         <img src="assets/logo.png" class="w-28" alt="" />
       </a>
-      <div>
-        <nav class="main-list hidden">
-          <ul class="main-nav-lis flex">
-            <li><a href="#" class="text-black-600 font-bold">Start</a></li>
-            <li><a href="#" class="text-black-600 font-bold">Sell</a></li>
-            <li><a href="#" class="text-black-600 font-bold">Market</a></li>
-            <li><a href="#" class="text-black-600 font-bold">Manage</a></li>
-          </ul>
 
-          <ul class="main-nav-2-list">
-            <li><a href="#" class="text-black-800 font-bold">Home</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="container flex items-center gap-8 justify-end">
+      <nav
+        class="main-list hidden lg:flex items-center justify-center lg:gap-32 xl:gap-64"
+      >
+        <ul
+          class="main-nav-list flex gap-2 items-center justify-between lg:gap-10"
+        >
+          <li><a href="#" class="text-black-600 font-bold">Start</a></li>
+          <li><a href="#" class="text-black-600 font-bold">Sell</a></li>
+          <li><a href="#" class="text-black-600 font-bold">Market</a></li>
+          <li><a href="#" class="text-black-600 font-bold">Manage</a></li>
+        </ul>
+      </nav>
+
+      <nav class="flex items-center gap-8 justify-end">
+        <ul
+          class="main-nav-2-list hidden lg:flex items-center justify-between gap-10"
+        >
+          <li><a href="#" class="text-black-800 font-bold">Pricing</a></li>
+          <li><a href="#" class="text-black-800 font-bold">Learn</a></li>
+        </ul>
         <a href="#" class="text-black-600 font-bold">Log in</a>
         <button class="nav-btn bg-transparent lg:hidden">
           <ion-icon class="w-10 h-10" name="menu-outline"></ion-icon>
@@ -82,7 +88,7 @@
           class="hidden lg:inline bg-secondarygreen font-bold shadow-md rounded text-white px-4 py-2 hover:bg-primarygreen hover:shadow-lg transition text-center"
           >Try for free</a
         >
-      </div>
+      </nav>
     </header>
     <!-- header section end -->
 
@@ -98,21 +104,23 @@
             The easiest way to sell online in India
           </h1>
           <p
-            class="text-base text-secondaryblack pb-8 sm:pr-[40%] md:pr-0 md:text-xl"
+            class="text-base text-slate-500 pb-8 sm:pr-[40%] md:pr-0 md:text-xl"
           >
             Build your eCommerce website to sell, ship, and process payments
             everywhere
           </p>
 
-          <div class="flex flex-col gap-2 sm:flex-row md:flex-col lg:flex-row">
+          <div
+            class="flex flex-col gap-2 sm:flex-row md:flex-col lg:flex-row lg:gap-4"
+          >
             <input
               type="text"
-              class="px-2 py-2 border-[0.1rem] rounded border-black focus:outline-secondarygreen sm:flex-1"
+              class="px-2 py-2 border-[0.1rem] rounded border-black focus:outline-secondarygreen sm:flex-1 lg:px-4 lg:py-4"
               placeholder="Enter your email address"
             />
             <a
               href="#"
-              class="block bg-secondarygreen font-bold shadow-md rounded text-white px-4 py-2 hover:bg-primarygreen hover:shadow-lg transition text-center"
+              class="block bg-secondarygreen font-bold shadow-md rounded text-white px-4 py-2 lg:px-8 lg:py-4 hover:bg-primarygreen hover:shadow-lg transition text-center"
               >Try for free</a
             >
           </div>
